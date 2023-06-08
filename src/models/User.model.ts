@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-import { EGenders } from "../enums/user.enum";
+import { EGenders } from "../enums";
 
 const userSchema = new Schema(
   {
@@ -34,4 +34,3 @@ const userSchema = new Schema(
 );
 
 export const User = model("user", userSchema);
-
