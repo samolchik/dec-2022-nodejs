@@ -1,10 +1,10 @@
-import { Types } from "mongoose";
+import { Document } from "mongoose";
 
-export interface IUser {
-  id: Types.ObjectId;
-  name: string;
-  age: number;
-  gender: string;
+export interface IUser extends Document {
+  // _id?: Types.ObjectId;
+  name?: string;
+  age?: number;
+  gender?: string;
   email: string;
   password: string;
 }
