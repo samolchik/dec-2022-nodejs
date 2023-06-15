@@ -1,29 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="" />
+    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 6 + auth">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson5_structure" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2QYrZrXy0XolXLp0GkUEW5n1QTJ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.15.0",
+    "javascript.nodejs.core.library.typings.version": "18.15.0",
+    "js.last.introduce.type": "CONST",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs/src/routers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "ts.external.directory.path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routers" />
+      <recent name="$PROJECT_DIR$/src/middlewares" />
+      <recent name="$PROJECT_DIR$/src/repositories" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src/conrtollers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,11 +89,108 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685541414842</updated>
-      <workItem from="1685541416245" duration="1000" />
+      <workItem from="1685541416245" duration="93750000" />
     </task>
+    <task id="LOCAL-00001" summary="base commit master">
+      <created>1685541660129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685541660129</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lesson 1">
+      <created>1685542320930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685542320930</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework 1">
+      <created>1685608704516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685608704516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lesson 2">
+      <created>1685626753271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685626753271</updated>
+    </task>
+    <task id="LOCAL-00005" summary="homework 2">
+      <created>1685873541361</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685873541361</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson 3">
+      <created>1685896512027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685896512027</updated>
+    </task>
+    <task id="LOCAL-00007" summary="lesson 4 + mongoose">
+      <created>1686129522179</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686129522179</updated>
+    </task>
+    <task id="LOCAL-00008" summary="lesson 4-5 + validation-joi">
+      <created>1686226412129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686226412129</updated>
+    </task>
+    <task id="LOCAL-00009" summary="lesson 4 + validation-joi">
+      <created>1686226870632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686226870632</updated>
+    </task>
+    <task id="LOCAL-00010" summary="lesson 5 + structure">
+      <created>1686324001967</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686324001967</updated>
+    </task>
+    <task id="LOCAL-00011" summary="lesson 6 + auth">
+      <created>1686653370705</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686653370705</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="base commit master" />
+    <MESSAGE value="lesson 1" />
+    <MESSAGE value="homework 1" />
+    <MESSAGE value="lesson 2" />
+    <MESSAGE value="homework 2" />
+    <MESSAGE value="lesson 3" />
+    <MESSAGE value="lesson 4 + mongoose" />
+    <MESSAGE value="lesson 4-5 + validation-joi" />
+    <MESSAGE value="lesson 4 + validation-joi" />
+    <MESSAGE value="lesson 5 + structure" />
+    <MESSAGE value="lesson 6 + auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 6 + auth" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -20,10 +20,6 @@ class AuthService {
     user: IUser
   ): Promise<ITokensPair> {
     try {
-      // user = await User.findOne({ email: credentials.email });
-
-      user = await this.getOneByEmailOrThrow(credentials.email);
-
       const isMatched = await passwordService.compare(
         credentials.password,
         user.password
@@ -34,6 +30,7 @@ class AuthService {
 
       const tokensPair = await tokenService.generateTokenPair({
         _id: user._id,
+        name: user.name,
       });
 
       await Token.create({
@@ -45,15 +42,6 @@ class AuthService {
     } catch (e) {
       throw new ApiError(e.message, e.status);
     }
-  }
-
-  private async getOneByEmailOrThrow(email: string): Promise<IUser> {
-    const user = await User.findOne({ email });
-    if (!user) {
-      throw new ApiError("User not found", 422);
-    }
-
-    return user;
   }
 }
 
