@@ -1,0 +1,9 @@
+//Agenda//
+
+Lesson 7 - modemailer:
+1. npm i nodemailer
+2. folder email.service
+3. npm i hbs
+4. main folder: email-templates (folders: layouts, partials, views)
+5. npm i nodemailer-express-handlebars
+

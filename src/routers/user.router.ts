@@ -6,7 +6,8 @@ import { UserValidator } from "../validators";
 
 const router = Router();
 
-router.get("/", userController.findAll);
+router.get("/", authMiddleware.checkAccessToken, userController.findAll);
+
 router.get(
   "/:userId",
   commonMiddleware.isIdValid("userId"),
