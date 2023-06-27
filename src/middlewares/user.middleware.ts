@@ -31,7 +31,9 @@ class UserMiddleware {
       next: NextFunction
     ): Promise<void> => {
       try {
-        const user = await User.findOne({ [field]: req.body[field] });
+        const user = await User.findOne({ [field]: req.body[field] }).select(
+          "password"
+        );
 
         if (!user) {
           throw new ApiError("Not found user", 422);
