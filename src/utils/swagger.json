@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "DEC-2022 NODEJS THE BEST GROUP",
+    "version": "1.0.0",
+    "title": "DEC-2022 API",
+    "contact": {
+      "email": "apiteam@okten.io"
+    }
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": ["users"],
+        "description": "get all users",
+        "summary": "get all users summary",
+        "responses": {
+          "200": {
+            "description": "RETURNED ARRAY OF USERS"
+          }
+        }
+      }
+    },
+    "/users/{userId}": {
+      "get": {
+        "tags": ["users"],
+        "description": "get user by user id",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "ID of usr to return",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "header",
+            "name": "Authorization",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "default": "eyfdkfldsfjkgflsjfdas"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "RETURNED USER",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "isActivated": {
+          "type": "boolean"
+        },
+        "age": {
+          "type": "integer",
+          "default": 5
+        }
+      }
+    }
+  }
+}

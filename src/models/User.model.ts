@@ -10,7 +10,7 @@ const userSchema = new Schema(
     age: {
       type: Number,
       min: [1, "Minimum value for age is 1"],
-      max: [199, "Maximum value for age is 199"],
+      max: [100, "Maximum value for age is 100"],
     },
     gender: {
       type: String,
@@ -25,12 +25,16 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-      // select: false,
+      select: false,
     },
     status: {
       type: String,
       default: EUserStatus.Inactive,
       enum: EUserStatus,
+    },
+    avatar: {
+      type: String,
+      required: false,
     },
   },
   {

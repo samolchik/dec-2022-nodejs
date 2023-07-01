@@ -1,5 +1,7 @@
 import { NextFunction, Request, Response } from "express";
+import { UploadedFile } from "express-fileupload";
 
+import { userMapper } from "../mappers";
 import { userService } from "../services";
 import { IUser } from "../types";
 
@@ -59,6 +61,40 @@ class UserController {
       await userService.deleteById(userId);
 
       return res.sendStatus(204);
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  public async uploadAvatar(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<Response<void>> {
+    try {
+      const { userId } = req.params;
+      const avatar = req.files.avatar as UploadedFile;
+
+      const user = await userService.uploadAvatar(userId, avatar);
+
+      const response = userMapper.toResponse(user);
+      return res.status(201).json(response);
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  public async deleteAvatar(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<Response<void>> {
+    try {
+      const { userId } = req.params;
+      const user = await userService.deleteAvatar(userId);
+
+      const response = userMapper.toResponse(user);
+      return res.status(201).json(response);
     } catch (e) {
       next(e);
     }
