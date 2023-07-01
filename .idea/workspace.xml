@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 8 + forgot password and activate email">
-      <change afterPath="$PROJECT_DIR$/src/crons/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crons/remove-old-token.cron.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/swagger.json" afterDir="false" />
+    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 9 + crons and swagger">
+      <change afterPath="$PROJECT_DIR$/src/configs/file.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mappers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mappers/user.mapper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middlewares/file.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/s3.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson8_password" />
+        <entry key="$PROJECT_DIR$" value="lesson9_cron,swagger" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +57,7 @@
     "javascript.nodejs.core.library.typings.version": "18.15.0",
     "js.last.introduce.type": "CONST",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs/src/utils",
+    "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -117,6 +116,7 @@
       <updated>1685541414842</updated>
       <workItem from="1685541416245" duration="93750000" />
       <workItem from="1687106108784" duration="48292000" />
+      <workItem from="1688229474779" duration="1324000" />
     </task>
     <task id="LOCAL-00001" summary="base commit master">
       <created>1685541660129</created>
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687900626472</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lesson 9 + crons and swagger">
+      <created>1688229658172</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688229658172</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +237,8 @@
     <MESSAGE value="lesson 6 + auth" />
     <MESSAGE value="lesson 7 + nodemailer, refresh, changePassword" />
     <MESSAGE value="lesson 8 + forgot password and activate email" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 8 + forgot password and activate email" />
+    <MESSAGE value="lesson 9 + crons and swagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 9 + crons and swagger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
