@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 9 + crons and swagger">
-      <change afterPath="$PROJECT_DIR$/src/configs/file.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mappers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mappers/user.mapper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middlewares/file.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/s3.service.ts" afterDir="false" />
+    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 10 + add and delete avatar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/s3.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/s3.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +103,16 @@
       <option name="specificationPath" value="$PROJECT_DIR$/src/utils/swagger.json" />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,7 +124,7 @@
       <updated>1685541414842</updated>
       <workItem from="1685541416245" duration="93750000" />
       <workItem from="1687106108784" duration="48292000" />
-      <workItem from="1688229474779" duration="1324000" />
+      <workItem from="1688229474779" duration="12880000" />
     </task>
     <task id="LOCAL-00001" summary="base commit master">
       <created>1685541660129</created>
@@ -216,11 +224,29 @@
       <option name="project" value="LOCAL" />
       <updated>1688229658172</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="lesson 10 + add and delete avatar">
+      <created>1688230902304</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688230902304</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -238,7 +264,29 @@
     <MESSAGE value="lesson 7 + nodemailer, refresh, changePassword" />
     <MESSAGE value="lesson 8 + forgot password and activate email" />
     <MESSAGE value="lesson 9 + crons and swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 9 + crons and swagger" />
+    <MESSAGE value="lesson 10 + add and delete avatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 10 + add and delete avatar" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/controllers/user.controller.ts</url>
+          <line>116</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog>
+          <selected-grouping-rules>
+            <grouping-rule id="XBreakpointGroupingByClassRule" />
+            <grouping-rule id="XBreakpointGroupingByPackageRule" />
+            <grouping-rule id="by-file" />
+          </selected-grouping-rules>
+        </breakpoints-dialog>
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
