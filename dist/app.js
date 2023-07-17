@@ -26,17 +26,34 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const node_http_1 = __importDefault(require("node:http"));
 const cors_1 = __importDefault(require("cors"));
 const express_1 = __importDefault(require("express"));
 const express_fileupload_1 = __importDefault(require("express-fileupload"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
 const mongoose = __importStar(require("mongoose"));
+const socket_io_1 = require("socket.io");
 const swaggerUi = __importStar(require("swagger-ui-express"));
 const configs_1 = require("./configs");
 const crons_1 = require("./crons");
 const routers_1 = require("./routers");
 const swaggerJson = __importStar(require("./utils/swagger.json"));
 const app = (0, express_1.default)();
+const server = node_http_1.default.createServer(app);
+const io = new socket_io_1.Server(server, { cors: { origin: "*" } });
+io.on("connection", (socket) => {
+    socket.on("message:create", (messageData) => {
+        console.log("Message Data:", messageData);
+        socket.emit("message:receive", { ok: true });
+    });
+    socket.on("broadcast:all", () => {
+        socket.broadcast.emit("alert", "Повітряна тривога!");
+    });
+    socket.on("room:joinUser", ({ roomId }) => {
+        socket.join(roomId);
+        io.to(roomId).emit("room:newUserAlert", socket.id);
+    });
+});
 const apiLimiter = (0, express_rate_limit_1.default)({
     windowMs: 60 * 1000,
     max: 10,
@@ -68,7 +85,7 @@ app.use((err, req, res, next) => {
         status: err.status,
     });
 });
-app.listen(configs_1.configs.PORT, async () => {
+server.listen(configs_1.configs.PORT, async () => {
     await mongoose.connect(configs_1.configs.DB_URL);
     (0, crons_1.cronRunner)();
     console.log(`Server has started on PORT ${configs_1.configs.PORT} 🥸`);

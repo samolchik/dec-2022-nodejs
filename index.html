@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<button id="send">one-to-one</button>
+<button id="broadcast">broadcast</button>
+<button id="joinRoom1">Room 1</button>
+<button id="joinRoom2">Room 2</button>
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+        crossorigin="anonymous"></script>
+
+<script>
+
+    const socket = io("http://localhost:5003");
+
+    const okBtn = document.getElementById('send');
+    const broadcastBtn = document.getElementById('broadcast');
+    const joinRoom1Btn = document.getElementById('joinRoom1');
+    const joinRoom2Btn = document.getElementById('joinRoom2');
+
+    okBtn.onclick = () => {
+        socket.emit("message:create", {text: "My first socket event"})
+    }
+
+    socket.on("message:receive", (messageInfo) => {
+        document.write(JSON.stringify(messageInfo, null, 2))
+    })
+
+    broadcastBtn.onclick = () => {
+        socket.emit("broadcast:all", "Sent to all users message")
+    }
+
+    socket.on("alert", (message) => {
+        alert(message)
+    })
+
+    joinRoom1Btn.onclick = () => {
+        socket.emit("room:joinUser", {roomId: 1})
+    }
+
+    joinRoom2Btn.onclick = () => {
+        socket.emit("room:joinUser", {roomId: 2})
+    }
+
+    socket.on("room:newUserAlert", (joinedUserId)=> {
+        alert(`User ${joinedUserId} join to this chat`)
+    })
+
+
+</script>
+
+</body>
+</html>

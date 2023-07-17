@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 10 + add and delete avatar">
+    <list default="true" id="e050e4fc-465f-4ffa-8197-6099bbad8b0e" name="Changes" comment="lesson 11 + add sockets">
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dec-2022-nodejs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dec-2022-nodejs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/s3.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/s3.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +24,30 @@
         <option value="package.json" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson9_cron,swagger" />
+        <entry key="$PROJECT_DIR$" value="lesson10_avatar" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="22cb7dff-7ec2-4a9c-8c0f-1d7e295a2e02" />
+        <option name="url" value="https://github.com/samolchik/dec-2022-nodejs.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -63,7 +79,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "JavaScript.Libraries",
     "ts.external.directory.path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-nodejs/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -124,7 +140,8 @@
       <updated>1685541414842</updated>
       <workItem from="1685541416245" duration="93750000" />
       <workItem from="1687106108784" duration="48292000" />
-      <workItem from="1688229474779" duration="12880000" />
+      <workItem from="1688229474779" duration="13545000" />
+      <workItem from="1689241741248" duration="14062000" />
     </task>
     <task id="LOCAL-00001" summary="base commit master">
       <created>1685541660129</created>
@@ -231,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688230902304</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lesson 10 + add uploadVideo">
+      <created>1688494452561</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688494452561</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,18 +289,11 @@
     <MESSAGE value="lesson 8 + forgot password and activate email" />
     <MESSAGE value="lesson 9 + crons and swagger" />
     <MESSAGE value="lesson 10 + add and delete avatar" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 10 + add and delete avatar" />
+    <MESSAGE value="lesson 10 + add uploadVideo" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 10 + add uploadVideo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/controllers/user.controller.ts</url>
-          <line>116</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog>
           <selected-grouping-rules>
